@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true        # 실행된 SQL 쿼리를 출력
+        format_sql: true      # 출력된 SQL을 보기 좋게 포맷
+    hibernate:
+      ddl-auto: update        # Hibernate의 DDL 실행 옵션 (필요 시 변경)
+      logging:
+        level:
+          root: INFO
+          org.hibernate.SQL: DEBUG         # SQL 쿼리 로그
+          org.hibernate.type.descriptor.sql.BasicBinder: TRACE   # SQL에 바인딩되는 파라미터 로그
+  datasource:
+      url: jdbc:oracle:thin:@172.16.29.140:1522/XE
+      username: system
+      password: 1111
+      driver-class-name: oracle.jdbc.OracleDriver
+
+  h2:
+    console:
+      enabled: true
