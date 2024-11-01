@@ -74,7 +74,7 @@ public class WebSecurityConfig {
         return new ProviderManager(authProvider);
     }
 /*
-    패스워드 인커더로 사용할 빈 등록 commit
+    패스워드 인커더로 사용할 빈 등록 commit 문구 테스트
  */
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
