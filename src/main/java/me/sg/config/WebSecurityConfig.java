@@ -63,7 +63,7 @@ public class WebSecurityConfig {
                 .build();
     }
     /*
-        인증관리자 관련 설정
+        인증관리자 관련 설정11
         사용자 정보를 가져올 서비스를 재정의하거나, 인증방법(LDAP, JDBC) 등을 설정
      */
     @Bean
