@@ -63,7 +63,7 @@ public class WebSecurityConfig {
                 .build();
     }
     /*
-        인증관리자 관련 설정 ddddd
+        인증관리자 관련 설정
         사용자 정보를 가져올 서비스를 재정의하거나, 인증방법(LDAP, JDBC) 등을 설정
      */
     @Bean
@@ -74,7 +74,7 @@ public class WebSecurityConfig {
         return new ProviderManager(authProvider);
     }
 /*
-    패스워드 인커더로 사용할 빈 등록 commit 문구 테스트 입니다/
+    패스워드 인커더로 사용할 빈 등록 commit 문구 테스트 입니다/ git add 없이 / ssdf
  */
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
